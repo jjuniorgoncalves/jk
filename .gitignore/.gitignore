@@ -1,0 +1,17 @@
+ <div class="wrapper" id="mainarea">
+	<div class="alert alert-warning centered-axis-xy" style="min-height: 20px; display:none;" role="alert" id="compilingmessage">
+		<div id='loadTasks'> </div>
+	</div>
+	<canvas id="canvas" class="emscripten" oncontextmenu="event.preventDefault()" style="display:none;">
+</div>
+
+<div class="row buttonarea text-center" id="buttonrow"><center>
+	<div class="col-sm-2 text-center"></div>
+	<div class="col-sm-2 text-center"><button style="display:none;" type="button" class="btn btn-primary" onclick="Module['pauseMainLoop']();">Pause</button></div>
+	<div class="col-sm-2 text-center"><button style="display:none;" type="button" class="btn btn-primary" onclick="Module['resumeMainLoop']();">Resume</button></div>
+	<div class="col-sm-2 text-center"><button style="display:none;" type="button" class="btn btn-primary" id="fullscreen_request">FullScreen</button></div>
+
+</div></center>
+<div class="texthalf text-normal jumbotron " id="logwindow" style='display:none'></div>
+
+<script type="text/javascript">
